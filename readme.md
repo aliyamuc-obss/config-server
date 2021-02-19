@@ -1,3 +1,7 @@
+### run postgres
+docker pull postgres:13.2
+docker run --name workshop-postgres -p 5432:5432 -e POSTGRES_PASSWORD=postgres -d postgres
+
 ### check config server for property source
 curl localhost:8080/bar/dev
 
